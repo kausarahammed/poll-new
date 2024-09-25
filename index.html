@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>Poll Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <div class="mockup-phone border-primary">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1">
+            <div class="poll-container mx-auto container p-6">
+                <h2 class="text-center text-red text-1xl font-bold mb-6">আমি ম্যানেজার প্রার্থী হিসেবে দেখতে চাই</h2>
+                <div id="pollForm">
+                    <label class="mb-6 ">
+                        <input type="radio" name="vote" value="JavaScript" >আতিকুর রহমান
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="vote" value="Python"> মনির খান
+                    </label><br>
+                     
+                    <button type="button" onclick="submitVote()" class="btn btn-primary my-6">Submit Vote</button>
+                </div>
+        
+                <div id="result">
+                    <h3 class="text-center font-bold text-2xl mb-6">ভোটের তালিকা</h3>
+                    <p class="font-bold text-2xl mb-6 text-center"> আতিকুর রহমান:  <span id="jsVotes">0</span></p>
+                    <p class="text-2xl font-bold text-center">মনির খান: <span id="pyVotes">0</span></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+    <script src="java.js"></script>
+</body>
+</html>
+
